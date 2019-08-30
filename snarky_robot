@@ -1,0 +1,18 @@
+//From the Odin Tutorials...a snarky robot.
+
+
+let number = prompt('What is your favorite number?'); //prompt user for their favorite number
+  
+if (number == 42) {
+  console.log("Yay! That's my favorite too!");
+}  //If the number is 42, the response should be "Yay! That's my favorite too!"
+
+else if (number < 42) {
+  let any_other_number = parseFloat(number) + 1;
+  console.log("Eh, that's OK but "  + any_other_number  + " would be even better");
+}  //If the number is less than 42, the response should be "Yay! That's my favorite too!" Here's where I learned parseFloat()
+
+else if (number > 42) {
+   console.log("LAME. " + "That number is too large!");
+}  //If number is too large then the response should be LAME. That number is too large!
+
